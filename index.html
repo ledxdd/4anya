@@ -15,7 +15,6 @@
             <div class="buttons">
                 <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
                 <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
-                <button class="btn" id="whyButton" onclick="openWhyPage()">Why</button>
                 <script>
                     function nextPage() {
                         window.location.href = "yes.html";
@@ -26,10 +25,7 @@
                         var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
                         document.getElementById('noButton').style.left = ${x}px;
                         document.getElementById('noButton').style.top = ${y}px;
-                    }
-
-                    function openWhyPage() {
-                        window.location.href = "why.html"; // Замените "why.html" на путь к вашей странице "Why"
+                   
                     }
                 </script> 
             </div>
